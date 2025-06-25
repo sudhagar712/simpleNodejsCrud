@@ -4,7 +4,6 @@ const { createProduct, getAllProducts, getSingleProduct, deleteProduct, updatePr
 const router = express.Router()
 
 
-
 router.post("/new", upload.array("images", 5)  ,createProduct )
 router.get("/", getAllProducts);
 router.get("/:id", getSingleProduct);
